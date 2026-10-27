@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0c">
+  <meta name="description" content="Услуга AMD plus: описание, особенности работы и переход к оценке. Детейлинг, реставрация и тюнинг в Москве.">
+  <title>Услуга — AMD plus</title>
+  <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+  <script src="services.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="page-shell page-case page-dialogs">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header page-header" id="top">
+    <a class="wordmark" href="index.html" aria-label="AMD plus — на главную">amd<span>plus</span><i aria-hidden="true">+</i></a>
+    <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a><a href="services.html" aria-current="page">Услуги</a><a href="works.html">Работы</a><a href="atelier.html">Ателье</a><a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions"><button class="icon-button search-trigger" type="button" data-search-open aria-label="Поиск услуг" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><a class="header-phone" href="tel:+79661616222">+7 966 16 16 222</a><button class="menu-toggle icon-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Меню"><span></span><span></span></button></div>
+  </header>
+  <main id="main" class="page-main" data-service-page>
+    <section class="page-section" aria-labelledby="page-service-title">
+      <div class="breadcrumb"><a href="index.html">AMD plus</a><span aria-hidden="true">/</span><a href="services.html">Услуги</a><span aria-hidden="true">/</span><span id="page-service-category">Услуга</span></div>
+      <div class="case-layout" data-animate>
+        <div class="case-copy">
+          <span class="page-kicker micro">Услуга AMD plus</span>
+          <h1 id="page-service-title">Подробности услуги</h1>
+          <p id="page-service-description"></p>
+          <ul class="case-brief" id="page-service-details"></ul>
+          <a id="page-service-estimate" class="button button-accent" href="https://amdplus.ru/konsultaciya" data-estimate aria-haspopup="dialog">Обсудить эту услугу <span aria-hidden="true">↗</span></a>
+          <a id="page-service-source" class="text-link" href="https://amdplus.ru/price" rel="noopener">Открыть на исходном сайте <span aria-hidden="true">↗</span></a>
+          <a class="text-link" data-service-fallback href="services.html" hidden>Вернуться в каталог <span aria-hidden="true">↗</span></a>
+        </div>
+        <aside class="case-media">
+          <img src="assets/leather.jpg" width="1920" height="736" alt="Работа AMD plus с материалами автомобильного салона" loading="lazy">
+          <figcaption>Состав работ и ориентир по стоимости зависят от состояния материала. Точную оценку дают после осмотра.</figcaption>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page-footer"><div class="footer-heading"><a class="wordmark" href="index.html">amd<span>plus</span><i aria-hidden="true">+</i></a><p>Характер в деталях.</p><a href="https://t.me/AMDplus_detailing" class="footer-social" rel="noopener">Telegram ↗</a></div><nav class="footer-links" aria-label="Ссылки AMD plus"><div><span class="micro">Разделы</span><a href="services.html">Услуги</a><a href="works.html">Работы</a><a href="atelier.html">Ателье</a><a href="contacts.html">Контакты</a></div><div><span class="micro">Перед визитом</span><a href="https://amdplus.ru/price" rel="noopener">Прайс</a><a href="https://amdplus.ru/garantiya" rel="noopener">Гарантия</a><a href="https://amdplus.ru/sposoby-oplaty" rel="noopener">Оплата</a></div><div><span class="micro">Связь</span><a href="tel:+79661616222">+7 966 16 16 222</a><a href="https://t.me/AMDplus_detailing" rel="noopener">Telegram</a></div></nav><div class="footer-bottom micro"><span>© AMD plus</span><span>Информация, цены и условия — на исходном сайте amdplus.ru</span></div></footer>
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><button class="dialog-close icon-button" type="button" data-close-dialog aria-label="Закрыть поиск">×</button><span class="micro accent">AMD plus / Навигация</span><h2 id="search-title">Что ищем?</h2><label for="global-search">Название услуги или направление</label><input id="global-search" type="search" placeholder="Полировка, кожа, плёнка…" autocomplete="off"><div id="search-results" class="search-results" aria-live="polite"><p>Введите название услуги, чтобы найти её в каталоге.</p></div></dialog>
+  <dialog id="estimate-dialog" class="estimate-dialog" aria-labelledby="estimate-title" aria-describedby="estimate-note"><button class="dialog-close icon-button" type="button" data-close-dialog aria-label="Закрыть оценку">×</button><span class="micro accent">Первый шаг / Оценка по фото</span><h2 id="estimate-title">Начнём с деталей.</h2><p id="estimate-note">Это локальный бриф: ничего не отправляется автоматически. Передайте задачу через исходную страницу оценки или Telegram.</p><label for="estimate-service">Что нужно сделать</label><select id="estimate-service"><option value="">Помогите определиться</option></select><label for="estimate-message">Коротко о задаче</label><textarea id="estimate-message" rows="3" placeholder="Модель автомобиля, состояние и что хочется изменить"></textarea><p class="estimate-summary" data-estimate-summary aria-live="polite">Подготовьте общий вид и крупные планы повреждений.</p><a id="estimate-handoff" class="button button-accent" href="https://amdplus.ru/konsultaciya" rel="noopener">Открыть исходную страницу оценки <span aria-hidden="true">↗</span></a><div class="dialog-links"><a href="https://t.me/AMDplus_detailing" rel="noopener">Написать в Telegram ↗</a><a href="tel:+79661616222">Позвонить в ателье ↗</a></div><p class="dialog-note">Это не форма отправки. Для передачи описания и фотографий используйте выбранный канал связи.</p></dialog>
+  <div id="app-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

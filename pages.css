@@ -1,0 +1,143 @@
+/* AMD plus / addressable pages. The home landing keeps its own composition; these rules stay scoped. */
+.page-shell{min-height:100svh;background:var(--ink)}
+.page-header{position:sticky;top:0;background:var(--ink);box-shadow:0 1px 0 #262b2e;z-index:30}
+.page-header .site-nav a[aria-current="page"]{color:var(--accent)}
+.page-main{overflow:hidden}
+.page-intro{padding:clamp(58px,9vw,130px) var(--gutter) clamp(48px,6vw,90px);border-bottom:1px solid var(--line)}
+.page-intro-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(230px,.55fr);gap:50px;align-items:end}
+.page-kicker{display:block;color:var(--accent);margin-bottom:24px}
+.page-title{font-size:clamp(54px,10vw,150px);max-width:1000px;line-height:.88;text-transform:uppercase}
+.page-title .muted{color:var(--muted)}
+.page-intro-copy{color:var(--muted);font-size:14px;line-height:1.75;max-width:330px;padding-bottom:7px}
+.breadcrumb{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:11px;margin-bottom:28px}
+.breadcrumb a{min-height:32px;display:inline-flex;align-items:center}
+.breadcrumb a:hover{color:var(--accent)}
+.page-section{padding:clamp(55px,7vw,110px) var(--gutter)}
+.page-section-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:42px}
+.page-section-heading h2{font-size:clamp(36px,5.5vw,76px);line-height:.94}
+.page-section-heading p{max-width:330px;color:var(--muted);font-size:14px;line-height:1.7}
+.page-footer{padding-top:25px}
+.page-footer .footer-links{margin-left:0}
+.page-footer .footer-bottom{padding-bottom:25px}
+/* Services: a compact, scannable directory rather than the home card grid. */
+.page-services .catalog-page-section{background:var(--paper);color:var(--ink)}
+.page-services .catalog-page-section .section-meta{border-color:var(--light-line)}
+.page-services .catalog-page-section .section-meta a{color:var(--ink)}
+.catalog-jumps{display:flex;flex-wrap:wrap;gap:9px;padding:0 0 30px;border-bottom:1px solid var(--light-line)}
+.catalog-jumps a{border:1px solid #b4bfc2;color:#414a4e;min-height:44px;padding:11px 17px;font-size:12px;display:inline-flex;align-items:center}
+.catalog-jumps a:hover,.catalog-jumps a:focus-visible{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.page-services .catalog-controls{margin:30px 0 22px}
+.page-services .catalog-label{margin-top:27px}
+.page-services .catalog-grid{display:block;border:0;border-top:1px solid var(--light-line)}
+.page-services .service-card{display:grid;grid-template-columns:90px minmax(180px,1fr) minmax(220px,.75fr) 30px;align-items:center;gap:20px;min-height:0;padding:21px 10px;border:0;border-bottom:1px solid var(--light-line);transition:background .2s,color .2s}
+.page-services .service-card:hover{background:#dfe4e5}
+.page-services .service-card-number{margin:0;font-size:10px}
+.page-services .service-card-title{font-size:clamp(18px,2vw,27px);margin:0;line-height:1.1}
+.page-services .service-card-description{font-size:12px;line-height:1.5;max-width:430px}
+.page-services .service-card-arrow{position:static;justify-self:end;transition:transform .2s}
+.page-services .service-card:hover .service-card-arrow{transform:translate(3px,-3px)}
+.page-services .catalog-empty{border-block:0;border-bottom:1px solid var(--light-line)}
+.catalog-note{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:35px;padding-top:22px;border-top:1px solid var(--light-line);color:#536065;font-size:13px;line-height:1.65}
+.catalog-note strong{color:var(--ink);font-weight:550}
+/* Work archive and case routes */
+.page-works .page-intro,.page-case .page-intro{background:#111618}
+.work-result{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:clamp(35px,8vw,120px);align-items:center}
+.page-works .result-frame{border:1px solid #2a3235}
+.page-works .result-copy h2{font-size:clamp(38px,5vw,70px);line-height:.93;margin:14px 0 25px}
+.page-works .result-copy p{color:var(--muted);font-size:13px;line-height:1.7;max-width:390px}
+.page-works .result-copy .result-toggle{margin:25px 0}
+.work-route-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px}
+.work-route-actions .text-link{border-color:var(--muted)}
+.work-archive-addressable{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:65px}
+.work-route-card{background:#151b1d;border:1px solid #2b3437;min-width:0}
+.work-route-card>a{display:block}
+.work-route-card .work-card-image{aspect-ratio:1.72}
+.work-route-card .work-card-caption{padding:17px 20px}
+.work-route-card .work-card-caption strong{font-size:18px}
+.work-route-card .lightbox-trigger{width:100%;min-height:44px;padding:10px 20px;background:transparent;border-top:1px solid #2b3437;color:var(--muted);font-size:11px;text-align:left}
+.work-route-card .lightbox-trigger:hover{color:var(--paper);background:#20282b}
+.page-case .case-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:clamp(35px,8vw,120px);align-items:start}
+.case-media{background:#151b1d;border:1px solid #2b3437;padding:clamp(12px,2vw,24px)}
+.case-media img{width:100%;max-height:690px;object-fit:contain;background:#0d1011}
+.case-media figcaption{font-size:12px;color:var(--muted);line-height:1.6;padding:15px 0 0}
+.case-copy .page-kicker{margin-bottom:14px}
+.case-copy h1{font-size:clamp(40px,5.5vw,78px);line-height:.92;margin-bottom:25px}
+.case-copy p{font-size:14px;line-height:1.75;color:var(--muted);max-width:410px}
+.case-brief{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:28px 0;padding:15px 0;color:var(--paper)!important}
+.case-copy .button{margin-top:25px}
+.case-copy .text-link{margin-top:15px}
+/* Atelier */
+.page-atelier .page-intro{background:#171d20}
+.atelier-page-lead{display:flex;justify-content:space-between;gap:35px;align-items:end}
+.atelier-page-lead p{font-size:clamp(24px,3vw,42px);line-height:1.1;letter-spacing:-.04em;max-width:620px}
+.atelier-page-links{display:flex;flex-wrap:wrap;gap:20px;margin-top:30px}
+.atelier-page-links a{min-height:44px;display:inline-flex;align-items:center;border-bottom:1px solid #637074;font-size:12px}
+.atelier-page-links a:hover{color:var(--accent);border-color:var(--accent)}
+.atelier-real-gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}
+.atelier-real-gallery figure{background:#151b1d}
+.atelier-real-gallery .gallery-ceramic{grid-row:span 2}
+.atelier-real-gallery img{width:100%;height:100%;object-fit:cover}
+.atelier-real-gallery .gallery-ceramic img{aspect-ratio:1/1.12}
+.atelier-real-gallery .gallery-retro img,.atelier-real-gallery .gallery-interior img{aspect-ratio:1.65}
+.atelier-real-gallery figcaption{display:flex;justify-content:space-between;gap:15px;padding:14px 16px;color:var(--muted);font-size:10px}
+.atelier-principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:65px;border-top:1px solid #3b4448}
+.atelier-principles article{padding:23px 25px 5px 0;border-right:1px solid #3b4448;margin-right:25px}
+.atelier-principles article:last-child{border-right:0;margin-right:0}
+.atelier-principles strong{display:block;color:var(--accent);font-size:13px;margin-bottom:12px}
+.atelier-principles p{color:#b0bcc1;font-size:13px;line-height:1.65}
+/* Contacts: practical information first, external actions explicit. */
+.page-contacts .page-intro{background:var(--accent);color:var(--ink);border-color:#9a3519}
+.page-contacts .page-intro .page-kicker,.page-contacts .page-intro-copy{color:var(--ink)}
+.contacts-practical{background:var(--accent);color:var(--ink)}
+.contacts-practical .section-meta{border-color:#9a3519}
+.contacts-grid-page{display:grid;grid-template-columns:1fr 1fr;gap:clamp(45px,10vw,160px)}
+.contact-block-page{border-top:1px solid #a73718;padding-top:18px}
+.contact-block-page h2{font-size:clamp(30px,4vw,58px);margin-bottom:20px}
+.contact-block-page p,.contact-block-page li{font-size:14px;line-height:1.7}
+.contact-block-page address{font-style:normal}
+.contact-big-phone{display:inline-block;font-size:clamp(42px,5vw,75px);font-weight:550;letter-spacing:-.06em;line-height:1;margin-bottom:25px}
+.contact-big-phone:hover{text-decoration:underline;text-underline-offset:8px}
+.contact-meta-list{list-style:none;padding:0;margin:0 0 22px}
+.contact-meta-list li{padding:12px 0;border-bottom:1px solid #a73718}
+.contact-meta-list span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.07em;opacity:.7;margin-bottom:3px}
+.contact-actions-page{display:flex;flex-wrap:wrap;gap:10px}
+.contact-actions-page a{min-height:48px;padding:13px 16px;border:1px solid #8e2e15;font-size:12px;display:inline-flex;align-items:center}
+.contact-actions-page a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.contact-info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:70px;border-top:1px solid #a73718}
+.contact-info-grid article{padding:22px 25px 0 0;border-right:1px solid #a73718;margin-right:25px}
+.contact-info-grid article:last-child{border-right:0;margin-right:0}
+.contact-info-grid h3{font-size:20px;margin-bottom:10px}
+.contact-info-grid p{font-size:12px;line-height:1.7}
+.contact-info-grid a{text-decoration:underline;text-underline-offset:4px}
+.contact-info-grid a:hover{opacity:.65}
+/* Shared dialog presence on every route. */
+.page-dialogs .dialog-note{max-width:520px}
+@media(max-width:760px){
+  .page-intro-grid,.work-result,.page-case .case-layout,.contacts-grid-page{grid-template-columns:1fr}
+  .page-intro-copy{max-width:480px}
+  .page-title{font-size:clamp(50px,16vw,100px)}
+  .page-section-heading{display:block}
+  .page-section-heading p{margin-top:20px}
+  .page-services .service-card{grid-template-columns:65px minmax(0,1fr) 24px;gap:11px;padding:18px 4px}
+  .page-services .service-card-description{grid-column:2/-1;grid-row:2;font-size:11px;padding-right:15px}
+  .page-services .service-card-title{font-size:20px}
+  .catalog-note{grid-template-columns:1fr}
+  .work-archive-addressable,.atelier-real-gallery{grid-template-columns:1fr}
+  .atelier-real-gallery .gallery-ceramic{grid-row:auto}
+  .atelier-real-gallery .gallery-ceramic img{aspect-ratio:1.2}
+  .atelier-page-lead{display:block}
+  .atelier-principles,.contact-info-grid{grid-template-columns:1fr}
+  .atelier-principles article,.contact-info-grid article{border-right:0;border-bottom:1px solid #3b4448;margin:0;padding:20px 0}
+  .contact-info-grid article{border-color:#a73718}
+}
+@media(max-width:480px){
+  .breadcrumb{font-size:9px}
+  .page-services .service-card{grid-template-columns:48px minmax(0,1fr) 20px}
+  .page-services .service-card-number{font-size:8px}
+  .page-services .service-card-title{font-size:18px}
+  .page-services .service-card-description{font-size:10px}
+  .contact-big-phone{font-size:54px}
+}
+@media(prefers-reduced-motion:reduce){
+  .page-services .service-card,.work-route-card .lightbox-trigger{transition:none}
+}

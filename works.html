@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b0c">
+  <meta name="description" content="Работы AMD plus: восстановление кожи салона и реставрация интерьеров. Реальные фотографии из архива ателье.">
+  <title>Работы — AMD plus</title>
+  <link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+  <script src="services.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body class="page-shell page-works page-dialogs">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header page-header" id="top">
+    <a class="wordmark" href="index.html" aria-label="AMD plus — на главную">amd<span>plus</span><i aria-hidden="true">+</i></a>
+    <nav id="site-nav" class="site-nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a><a href="services.html">Услуги</a><a href="works.html" aria-current="page">Работы</a><a href="atelier.html">Ателье</a><a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-actions"><button class="icon-button search-trigger" type="button" data-search-open aria-label="Поиск услуг" aria-haspopup="dialog"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button><a class="header-phone" href="tel:+79661616222">+7 966 16 16 222</a><button class="menu-toggle icon-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Меню"><span></span><span></span></button></div>
+  </header>
+  <main id="main" class="page-main">
+    <section class="page-intro" aria-labelledby="page-title">
+      <div class="breadcrumb"><a href="index.html">AMD plus</a><span aria-hidden="true">/</span><span>Работы</span></div>
+      <div class="page-intro-grid"><div><span class="page-kicker micro">Архив ателье</span><h1 id="page-title" class="page-title">Разница<br><span class="muted">в деталях.</span></h1></div><p class="page-intro-copy">Реальные фотографии работ. Ракурсы «до» и «после» отличаются — показываем отдельные кадры, без имитации точного совмещения.</p></div>
+    </section>
+    <section class="page-section" aria-labelledby="case-lead-title">
+      <div class="section-meta micro"><span>01 / Разобранный кейс</span><span>Toyota Land Cruiser Prado</span></div>
+      <h2 id="case-lead-title" class="visually-hidden">Восстановление кожи сиденья Toyota Land Cruiser Prado</h2>
+      <div class="work-result" data-animate>
+        <figure class="result-figure">
+          <div class="result-frame"><img id="result-image" src="assets/prado-before.jpg" alt="До восстановления: потёртости на коже сиденья Toyota Land Cruiser Prado" width="450" height="500"></div>
+          <figcaption id="result-caption" aria-live="polite">До восстановления. Фотографии сняты с разных ракурсов: это два отдельных кадра, а не совмещённый слайдер.</figcaption>
+        </figure>
+        <div class="result-copy">
+          <span class="micro">Кейс / Восстановление кожи</span>
+          <h2>Toyota Land Cruiser Prado</h2>
+          <div class="result-toggle" role="group" aria-label="Состояние сиденья на фотографии">
+            <button class="is-active" type="button" data-work-state="before" aria-pressed="true" aria-controls="result-image result-caption">До</button>
+            <button type="button" data-work-state="after" aria-pressed="false" aria-controls="result-image result-caption">После <span aria-hidden="true">↗</span></button>
+          </div>
+          <p>Работа с износом кожи сиденья: восстановление поверхности и окраска. Состав и результат зависят от исходного состояния материала.</p>
+          <div class="work-route-actions">
+            <a class="text-link" href="case.html?work=prado">Разобрать работу <span aria-hidden="true">↗</span></a>
+            <a class="text-link work-enlarge" href="assets/prado.jpg" data-work="prado" aria-haspopup="dialog">Открыть фото крупнее <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="work-archive-addressable" data-animate data-animate-delay="1">
+        <div class="work-route-card">
+          <a href="case.html?work=bmw"><span class="work-card-image"><img src="assets/bmw.jpg" width="900" height="500" loading="lazy" alt="Архивная фотография восстановления кожаного сиденья BMW 750"><span class="image-arrow" aria-hidden="true">↗</span></span><span class="work-card-caption"><strong>BMW 750</strong><span>Покраска сиденья / Архив</span></span></a>
+          <button class="lightbox-trigger" type="button" data-work="bmw" aria-haspopup="dialog">Открыть фото крупнее ↗</button>
+        </div>
+        <div class="work-route-card">
+          <a href="case.html?work=retro"><span class="work-card-image"><img src="assets/retro.jpg" width="900" height="500" loading="lazy" alt="Классический автомобиль: кожаный салон и деревянная приборная панель"><span class="image-arrow" aria-hidden="true">↗</span></span><span class="work-card-caption"><strong>Реставрация ретроавтомобиля</strong><span>Интерьер / Архив</span></span></a>
+          <button class="lightbox-trigger" type="button" data-work="retro" aria-haspopup="dialog">Открыть фото крупнее ↗</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page-footer"><div class="footer-heading"><a class="wordmark" href="index.html">amd<span>plus</span><i aria-hidden="true">+</i></a><p>Характер в деталях.</p><a href="https://t.me/AMDplus_detailing" class="footer-social" rel="noopener">Telegram ↗</a></div><nav class="footer-links" aria-label="Ссылки AMD plus"><div><span class="micro">Разделы</span><a href="services.html">Услуги</a><a href="works.html">Работы</a><a href="atelier.html">Ателье</a><a href="contacts.html">Контакты</a></div><div><span class="micro">Перед визитом</span><a href="https://amdplus.ru/vyzov-mastera" rel="noopener">Выезд специалиста</a><a href="https://amdplus.ru/garantiya" rel="noopener">Условия гарантии</a><a href="https://amdplus.ru/otzyvy" rel="noopener">Отзывы</a></div><div><span class="micro">Связь</span><a href="tel:+79661616222">+7 966 16 16 222</a><a href="https://t.me/AMDplus_detailing" rel="noopener">Telegram</a></div></nav><div class="footer-bottom micro"><span>© AMD plus</span><span>Информация, цены и условия — на исходном сайте amdplus.ru</span></div></footer>
+  <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title"><button class="dialog-close icon-button" type="button" data-close-dialog aria-label="Закрыть поиск">×</button><span class="micro accent">AMD plus / Навигация</span><h2 id="search-title">Что ищем?</h2><label for="global-search">Название услуги или направление</label><input id="global-search" type="search" placeholder="Полировка, кожа, плёнка…" autocomplete="off"><div id="search-results" class="search-results" aria-live="polite"><p>Введите название услуги, чтобы найти её в каталоге.</p></div></dialog>
+  <dialog id="work-dialog" class="work-dialog" aria-labelledby="work-title"><button class="dialog-close icon-button" type="button" data-close-dialog aria-label="Закрыть фотографию">×</button><span class="micro accent">Из архива AMD plus</span><h2 id="work-title">Работа ателье</h2><figure><img id="work-image" src="assets/prado.jpg" width="900" height="500" alt="Работа ателье AMD plus"><figcaption id="work-caption">Фотография из архива работ.</figcaption></figure></dialog>
+  <div id="app-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
