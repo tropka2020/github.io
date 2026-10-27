@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171817">
+  <meta name="description" content="AMD plus — детейлинг, реставрация и тюнинг в Москве. Оценка вашей задачи по фото.">
+  <title>Cinematic Garage — AMD plus</title>
+  <link rel="preload" href="../assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/hero.jpg" as="image">
+  <link rel="stylesheet" href="cinematic.css">
+  <script src="cinematic.js" defer></script>
+</head>
+<body class="cinematic-garage">
+  <nav aria-label="Варианты дизайна" class="concept-switch">
+    <a href="index.html">Все варианты</a>
+    <a href="cinematic.html" aria-current="page">Cinematic Garage</a>
+    <a href="chrome.html">Chrome Atelier</a>
+    <a href="performance.html">Performance Studio</a>
+  </nav>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <main id="main">
+    <section class="garage-scene" aria-labelledby="scene-title">
+      <div class="scene-photograph" aria-hidden="true">
+        <img id="scene-image" src="../assets/hero.jpg" alt="" width="1920" height="736" fetchpriority="high">
+      </div>
+      <div class="scene-shade" aria-hidden="true"></div>
+      <div class="travelling-light" aria-hidden="true"></div>
+      <header class="garage-header">
+        <a class="garage-brand" href="../index.html" aria-label="AMD plus — главная">amd<span>plus</span><b aria-hidden="true">+</b></a>
+        <nav class="garage-nav" aria-label="Основная навигация">
+          <a href="../services.html">Услуги</a>
+          <a href="../works.html">Работы</a>
+          <a href="../atelier.html">Ателье</a>
+          <a href="../contacts.html">Контакты</a>
+        </nav>
+        <a class="header-phone" href="tel:+79661616222">+7 966 16-16-222</a>
+      </header>
+      <div class="scene-story">
+        <h1 id="scene-title">Сохранить<br>притяжение</h1>
+        <div class="scene-introduction">
+          <p class="company-description">Детейлинг, реставрация и тюнинг.<br>AMD plus, Москва.</p>
+          <p class="scene-context" id="scene-context">Защитная плёнка и покрытия —<br>чтобы беречь то, что нравится.</p>
+          <a class="estimate-link" href="https://amdplus.ru/konsultaciya">Оценить по фото <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="scene-controls" role="group" aria-label="Выберите направление работ">
+        <button type="button" class="scene-button is-selected" data-scene="protection" aria-pressed="true" aria-controls="scene-image scene-context">Защита <span aria-hidden="true">↗</span></button>
+        <button type="button" class="scene-button" data-scene="restoration" aria-pressed="false" aria-controls="scene-image scene-context">Реставрация <span aria-hidden="true">↗</span></button>
+        <button type="button" class="scene-button" data-scene="detailing" aria-pressed="false" aria-controls="scene-image scene-context">Детейлинг <span aria-hidden="true">↗</span></button>
+      </div>
+      <p class="visually-hidden" id="scene-status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+    <section class="garage-case" aria-labelledby="case-title">
+      <figure class="case-photograph">
+        <img src="../assets/prado.jpg" width="900" height="500" loading="lazy" alt="Кожа сиденья Toyota Prado: слева потёртости на боковой поддержке, справа результат реставрации">
+        <figcaption><span>До реставрации</span><span>После</span></figcaption>
+      </figure>
+      <div class="case-story">
+        <p class="case-model">Toyota Land Cruiser Prado</p>
+        <h2 id="case-title">Не менять.<br>Восстановить.</h2>
+        <p>Задача — убрать потёртости на кожаном сиденье. Восстановили повреждённый участок и цвет кожи. Слева — исходное состояние, справа — результат работы.</p>
+        <a class="case-link" href="../case.html?work=prado">Рассмотреть работу <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="garage-footer">
+    <a class="footer-name" href="../index.html">AMD plus</a>
+    <a class="footer-address" href="../contacts.html">Москва, Бережковская наб., 20с23<span>Ежедневно, 10:00–21:00</span></a>
+    <a class="footer-phone" href="tel:+79661616222">+7 966 16-16-222</a>
+  </footer>
+</body>
+</html>

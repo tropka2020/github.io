@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e7eaec">
+  <title>Chrome Atelier — AMD plus</title>
+  <meta name="description" content="AMD plus — детейлинг, реставрация и тюнинг в Москве. Бережковская набережная, 20с23. Обсудите задачу по фото.">
+  <link rel="preload" href="../assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="chrome.css">
+  <script src="chrome.js" defer></script>
+</head>
+<body>
+  <nav aria-label="Варианты дизайна" class="concept-switch">
+    <a href="index.html">Все варианты</a>
+    <a href="cinematic.html">Cinematic</a>
+    <a href="chrome.html" aria-current="page">Chrome</a>
+    <a href="performance.html">Performance</a>
+  </nav>
+  <a class="skip-link" href="#main">К содержанию</a>
+  <header class="site-header page-width" data-intro>
+    <a class="brand" href="chrome.html" aria-label="AMD plus — главная">AMD<span>+</span></a>
+    <nav class="site-nav" aria-label="Основная навигация">
+      <a href="../services.html">Услуги</a>
+      <a href="../works.html">Работы</a>
+      <a href="../atelier.html">Ателье</a>
+      <a href="../contacts.html">Контакты</a>
+    </nav>
+    <a class="header-phone" href="tel:+79661616222">+7 966 161-62-22</a>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="page-width hero-heading">
+        <h1 id="hero-title"><span data-intro>Точность</span><span data-intro><i aria-hidden="true">/</i> меняет всё</span></h1>
+        <div class="hero-support">
+          <p data-intro>Детейлинг, реставрация и тюнинг. <br>AMD plus, Москва.</p>
+          <div class="hero-action" data-intro>
+            <p>От полировки кузова <br>до восстановления деталей салона.</p>
+            <a class="button button-red" href="https://amdplus.ru/konsultaciya">Обсудить по фото <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+      <figure class="hero-figure" data-intro>
+        <div class="photo-window">
+          <img class="hero-photo" src="../assets/polish.jpg" width="1920" height="736" alt="Мастер полирует чёрный кузов: инструмент и отражения на поверхности" fetchpriority="high" decoding="async">
+        </div>
+        <figcaption class="page-width"><span>Внимание к поверхности. Работа с каждой деталью.</span><a href="../services.html">Все услуги <span aria-hidden="true">↗</span></a></figcaption>
+      </figure>
+    </section>
+    <section class="work page-width" aria-labelledby="work-title" data-intro>
+      <div class="work-heading">
+        <h2 id="work-title">Восстановить <br>кожу</h2>
+        <div class="work-description"><p>Toyota Land Cruiser Prado. <br>Реставрация кожи сиденья.</p><a class="text-link" href="../works.html">Смотреть работы <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="work-viewer">
+        <div class="viewer-controls" aria-label="Показать фотографии Prado" hidden>
+          <button type="button" data-view="both" aria-pressed="true">Сравнить</button>
+          <button type="button" data-view="before" aria-pressed="false">До</button>
+          <button type="button" data-view="after" aria-pressed="false">После</button>
+        </div>
+        <div class="work-photos" id="prado-photos" data-view="both">
+          <figure class="work-shot shot-before"><img src="../assets/prado-before.jpg" width="390" height="500" alt="До реставрации: потёртости и трещины на боковой части кожаного сиденья Prado" loading="lazy" decoding="async"><figcaption>До реставрации</figcaption></figure>
+          <figure class="work-shot shot-after"><img src="../assets/prado-after.jpg" width="390" height="500" alt="После реставрации: восстановленная поверхность боковой части сиденья Prado" loading="lazy" decoding="async"><figcaption>После реставрации</figcaption></figure>
+        </div>
+        <p class="photo-note" role="status" aria-live="polite">Два реальных снимка. Ракурс и освещение отличаются.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page-width" data-intro>
+    <div><a class="footer-phone" href="tel:+79661616222">+7 966 161-62-22</a><p>Ежедневно, 10:00–21:00</p></div>
+    <div class="footer-address"><p>Москва, Бережковская наб., 20с23</p><a class="text-link" href="../contacts.html">Как добраться <span aria-hidden="true">↗</span></a></div>
+    <a class="footer-consult" href="https://amdplus.ru/konsultaciya">Начнём с вашего автомобиля <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>
